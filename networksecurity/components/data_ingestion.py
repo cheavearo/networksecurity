@@ -12,6 +12,7 @@ import numpy as np
 import pandas as pd
 ### Upgrade pymongo in Command Prompt: pymongo-4.13.0
 import pymongo
+from collections.abc import MutableMapping
 from typing import List
 from sklearn.model_selection import train_test_split
 
