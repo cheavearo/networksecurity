@@ -2,9 +2,9 @@ python-dotenv
 pandas
 numpy
 certifi
-pymongo==4.13.0
+pymongo[srv]==3.6
+dnspython
 pymongo
 scikit-learn
-dill
 PyYAML>=6.0
 #-e.

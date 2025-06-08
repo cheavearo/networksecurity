@@ -71,7 +71,7 @@ class DataValidation:
                 report.update({column:{
                     "p_value":float(is_same_dist.pvalue),
                     "drift_status":is_found
-                }})
+                    }})
             drift_report_file_path= self.data_validation_config.data_validation_drift_file_path
 
             ## Create directory
@@ -84,7 +84,7 @@ class DataValidation:
     
     def initiate_data_validation(self) -> DataValidationArtifact:
         try:
-            train_file_path=self.data_ingestion_artifact.train_file_path
+            train_file_path=self.data_ingestion_artifact.trained_file_path
             test_file_path=self.data_ingestion_artifact.test_file_path
 
             # Read data from train and test
@@ -117,12 +117,13 @@ class DataValidation:
 
             data_validation_artifacts = DataValidationArtifact(
                 validation_status=status,
-                valid_train_file_path=self.data_ingestion_artifact.train_file_path,
+                valid_train_file_path=self.data_ingestion_artifact.trained_file_path,
                 valid_test_file_path=self.data_ingestion_artifact.test_file_path,
                 invalid_train_file_path=None,
                 invalid_test_file_path=None,
                 drift_report_file_path=self.data_validation_config.data_validation_drift_file_path,
             )
+            return data_validation_artifacts
 
 
 
