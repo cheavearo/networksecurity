@@ -1,0 +1,14 @@
+artifact_uri: file:///D:/MLOps/networksecurity/mlruns/0/e10bfea6c7f2485bb5212addd3b5cb35/artifacts
+end_time: 1749961636615
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: e10bfea6c7f2485bb5212addd3b5cb35
+run_name: peaceful-dove-203
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1749961634201
+status: 3
+tags: []
+user_id: User

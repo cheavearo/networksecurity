@@ -5,6 +5,7 @@ certifi
 pymongo[srv]==3.6
 dnspython
 pymongo
+mlflow
 scikit-learn
 PyYAML>=6.0
 #-e.

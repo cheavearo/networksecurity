@@ -1,0 +1,14 @@
+artifact_uri: file:///D:/MLOps/networksecurity/mlruns/0/8a084275839145e88a06b3be2abd2149/artifacts
+end_time: 1749962422636
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 8a084275839145e88a06b3be2abd2149
+run_name: thoughtful-shoat-210
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1749962420307
+status: 3
+tags: []
+user_id: User
