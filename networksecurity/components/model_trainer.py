@@ -1,7 +1,6 @@
 import os
 import sys
-import mlflow
-import mlflow.sklearn
+
 from networksecurity.logging.logger import logging
 
 
@@ -25,6 +24,14 @@ from sklearn.ensemble import (
     RandomForestClassifier
 )
 
+import mlflow
+import mlflow.sklearn
+import dagshub
+dagshub.init(repo_owner='vearochea8', repo_name='networksecurity', mlflow=True)
+os.environ["MLFLOW_TRACKING_URI"]="https://dagshub.com/vearochea8/networksecurity.mlflow"
+os.environ["MLFLOW_USERNAME"]="vearochea8"
+os.environ["MLFLOW_PASSWORD"]="e8545fbf636399cbccbf71969919781142296ab8"
+
 class ModelTrainer:
     def __init__(self,model_trainer_config: ModelTrainerConfig,data_transformation_artifact: DataTransformationArtifact):
         try:
@@ -41,7 +48,7 @@ class ModelTrainer:
             mlflow.log_metric("f1_score", f1_score)
             mlflow.log_metric("precision",precision_score)
             mlflow.log_metric("recall_score", recall_score)
-            mlflow.sklearn.log_model(best_model,"model")
+            # mlflow.sklearn.log_model(best_model,"model")
 
 
     def train_model(self,x_train,y_train,x_test,y_test):
@@ -110,6 +117,7 @@ class ModelTrainer:
         os.makedirs(model_dir_path, exist_ok=True)
         Network_Model=NetworkModel(preprocessor=preprocessor,model=best_model)
         save_object(self.model_trainer_cofig.trained_model_file_path,obj=NetworkModel)
+        save_object("final_model/model.pkl",best_model)
 
         ## Create Model Trainer Artifact
         model_trainer_artifact=ModelTrainerArtifact(trained_model_file_path=self.model_trainer_cofig.trained_model_file_path,

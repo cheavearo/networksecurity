@@ -8,4 +8,8 @@ pymongo
 mlflow
 scikit-learn
 PyYAML>=6.0
+dagshub
+fastapi
+uvicorn
+python-multipart
 #-e.
