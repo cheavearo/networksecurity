@@ -24,9 +24,12 @@ from networksecurity.entity.artifacts_entity import(
     ModelTrainerArtifact
 )
 
+from networksecurity.cloud.s3_syncer import S3Sync
+
 class TrainingPipeline:
     def __init__(self):
         self.training_pipeline_config=TrainingPipelineConfig()
+        self.s3_sync = S3Sync
     def start_data_ingestion(self):
         try:
             self.data_ingestion_config=DataIngestionConfig(training_pipeline_config=self.training_pipeline_config)
