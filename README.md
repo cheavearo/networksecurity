@@ -28,4 +28,5 @@ sudo usermod -aG docker ubuntu
 
 newgrp docker
 
-#Updating on deployment change
+# Command Promp to run the app
+uvicorn app:app --reload
