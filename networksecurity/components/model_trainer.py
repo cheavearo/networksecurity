@@ -27,7 +27,7 @@ from sklearn.ensemble import (
 import mlflow
 import mlflow.sklearn
 import dagshub
-dagshub.init(repo_owner='vearochea8', repo_name='networksecurity', mlflow=True)
+# dagshub.init(repo_owner='vearochea8', repo_name='networksecurity', mlflow=True)
 os.environ["MLFLOW_TRACKING_URI"]="https://dagshub.com/vearochea8/networksecurity.mlflow"
 os.environ["MLFLOW_USERNAME"]="vearochea8"
 os.environ["MLFLOW_PASSWORD"]="e8545fbf636399cbccbf71969919781142296ab8"
