@@ -95,5 +95,5 @@ jobs:
       - name: Clean previous images and containers
         run: |
          docker system prune -f
-      - name: List all Docker containers
-        run: docker ps -a
+      # - name: List all Docker containers
+        # run: docker ps -a
