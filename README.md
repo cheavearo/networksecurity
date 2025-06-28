@@ -34,4 +34,4 @@ newgrp docker
 
 # Command Promp to run the app
 uvicorn app:app --reload
-# you can absolutely run docker ps -a on your EC2 instance if you're inside the instance.
+# you can absolutely run docker ps -a on your EC2 instance if you're inside the instance
