@@ -1,6 +1,0 @@
-[ 2025-06-26 21:37:19,978 ] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
-[ 2025-06-26 21:37:19,982 ] 107 dagshub - INFO - Accessing as vearochea8
-[ 2025-06-26 21:37:20,450 ] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/repos/vearochea8/networksecurity "HTTP/1.1 200 OK"
-[ 2025-06-26 21:37:20,887 ] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
-[ 2025-06-26 21:37:20,888 ] 107 dagshub - INFO - Initialized MLflow to track repo "vearochea8/networksecurity"
-[ 2025-06-26 21:37:20,888 ] 107 dagshub - INFO - Repository vearochea8/networksecurity initialized!

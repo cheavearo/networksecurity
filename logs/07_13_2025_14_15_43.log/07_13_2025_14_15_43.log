@@ -1,6 +1,0 @@
-[ 2025-07-13 14:15:44,654 ] 161 numexpr.utils - INFO - NumExpr defaulting to 16 threads.
-[ 2025-07-13 14:16:01,695 ] 40 root - INFO - Start Data Ingestion
-[ 2025-07-13 14:22:21,825 ] 40 root - INFO - Start Data Ingestion
-[ 2025-07-13 14:23:05,007 ] 40 root - INFO - Start Data Ingestion
-[ 2025-07-13 14:29:11,411 ] 40 root - INFO - Start Data Ingestion
-[ 2025-07-13 14:30:16,726 ] 40 root - INFO - Start Data Ingestion
